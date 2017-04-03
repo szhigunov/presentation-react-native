@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Introduction to React Native for Ciklumers</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+  <style>
+    .text-highlight--orange {
+      display: inline;
+      background: orange;
+      box-shadow: 10px 0 0 orange, -10px 0 0 orange;
+    }
+  </style>
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>Introduction to React Native</h1>
+		<p>for Ciklumers</p>
+	</header>
+	<section class="slide" id="cover">
+		<h2 class="text-highlight--orange">Introduction to React Native</h2>
+    <br/>
+		<p class="text-highlight--orange">for Solutions JS Team</p>
+		<img src="pictures/bg.jpg" alt="" class="cover">
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+		<style>
+      #cover h2 {
+				margin:30px 0 0;
+				color:#FFF;
+				text-align:center;
+				font-size:70px;
+				}
+			#cover p {
+				margin:10px 0 0;
+				text-align:center;
+				color:#FFF;
+				font-style:italic;
+				font-size:20px;
+				}
+				#cover p a {
+					color:#FFF;
+					}
+		</style>
+	</section>
+	<section class="slide">
+		<h2>React Native</h2>
+    <p>Learn once, write anywhere: Build mobile apps with React</p>
+		<ol>
+      <li>46 000+ stars</li>
+      <li>1230+ contributors</li>
+			<li>Developing with the same tools</li>
+			<li>Almost Native</li>
+			<li>Power of native java/objective-c/swift libraries</li>
+			<li>Update app w/o App Store / Play Store ( CodePush )</li>
+		</ol>
+		<p class="note"> In React Native is only 40% of javascript code</p>
+	</section>
+  <section class="slide">
+		<h2>Who's using React Native</h2>
+		<ol>
+      <li><a href="https://code.facebook.com/posts/1189117404435352/react-native-for-android-how-we-built-the-first-cross-platform-react-native-app/">Facebook</a></li>
+			<li><a href="https://www.youtube.com/watch?v=tUfgQtmG3R0">Airbnb</a></li>
+			<li><a href="https://engineering.instagram.com/react-native-at-instagram-dd828a9a90c7#.3h4wir4zr">Instagram</a></li>
+			<li><a href="https://medium.com/walmartlabs/react-native-at-walmartlabs-cdd140589560#.ueonqqloc">Walmart</a></li>
+			<li><a href="https://www.youtube.com/watch?v=cI9bDvDEsYE">li.st</a></li>
+		</ol>
+    <p class="note"><a href="https://facebook.github.io/react-native/showcase.html">More...</a></p>
+    <p class="note">Some of these are hybrid native/React Native apps.</p>
+	</section>
+  <section class="slide">
+		<h2>React Native for javascript team</h2>
+		<ol>
+			<li class="next">Easy to get started</li>
+			<li class="next">Great background using React on the web</li>
+			<li class="next">60%-70%-80% code sharing between platform</li>
+      <li class="next">Share code between web ( React ) and mobile ( React Native) applications</li>
+			<li class="next">Mature ecosystem and community</li>
+			<li class="next">Hot Module Reload/Live Reload</li>
+      <li class="next">Powerful Chrome Debugging Tools</li>
+			<li class="next">Code in javascript</li>
+		</ol>
+	</section>
+	<section class="slide">
+		<h2>Getting Started</h2>
+    <p>in 5 min</p>
+		<ul>
+      <li class="next"><code>npm i -g react-native-cli</code></li>
+      <li class="next"><code>react-native init my-native-app</code></li>
+      <li class="next"><code>cd my-native-app && react-native run-ios</code></li>
+    </ul>
+	</section>
+  <section class="slide" id="picture">
+		<img src="pictures/iosapp.png" alt="" class="cover">
+	</section>
+	<section class="slide" style="background:rgb(50, 41, 49);">
+		<pre style="font-size: 18px;">
+      <div style="color: rgb(185, 181, 184); background-color: rgb(50, 41, 49); font-family: &quot;source code pro&quot;, &quot;courier new&quot;, monospace, &quot;droid sans fallback&quot;; font-weight: bold; font-size: 14px; line-height: 19px;"><div><span style="color: rgb(200, 94, 124);">import</span>&nbsp;<span style="color: rgb(221, 70, 76);">React</span>,&nbsp;{&nbsp;<span style="color: rgb(221, 70, 76);">Component</span>&nbsp;}&nbsp;<span style="color: rgb(200, 94, 124);">from</span>&nbsp;'<span style="color: rgb(143, 193, 62);">react</span>';</div><div><span style="color: rgb(200, 94, 124);">import</span>&nbsp;{&nbsp;<span style="color: rgb(221, 70, 76);">Text</span>,&nbsp;<span style="color: rgb(221, 70, 76);">View</span>&nbsp;}&nbsp;<span style="color: rgb(200, 94, 124);">from</span>&nbsp;'<span style="color: rgb(143, 193, 62);">react-native</span>';</div><br><div><span style="color: rgb(200, 94, 124);">class</span><span style="color: rgb(255, 255, 255);">&nbsp;</span><span style="color: rgb(253, 204, 89);">MyComponent</span><span style="color: rgb(255, 255, 255);">&nbsp;</span><span style="color: rgb(200, 94, 124);">extends</span><span style="color: rgb(255, 255, 255);">&nbsp;</span><span style="color: rgb(143, 193, 62);">Component</span><span style="color: rgb(255, 255, 255);">&nbsp;{</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;</span><span style="color: rgb(18, 144, 191);">render</span>()<span style="color: rgb(255, 255, 255);">&nbsp;{</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(200, 94, 124);">return</span><span style="color: rgb(255, 255, 255);">&nbsp;(</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="color: rgb(255, 255, 255);">&lt;</span><span style="color: rgb(221, 70, 76);">View</span><span style="color: rgb(255, 255, 255);">&gt;</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: rgb(221, 70, 76);">Text</span><span style="color: rgb(255, 255, 255);">&gt;</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If&nbsp;you&nbsp;like&nbsp;React&nbsp;on&nbsp;the&nbsp;web,&nbsp;you'll&nbsp;like&nbsp;React&nbsp;Native.</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: rgb(221, 70, 76);">Text</span><span style="color: rgb(255, 255, 255);">&gt;</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;</span><span style="color: rgb(221, 70, 76);">Text</span><span style="color: rgb(255, 255, 255);">&gt;</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You&nbsp;just&nbsp;use&nbsp;native&nbsp;components&nbsp;like&nbsp;'View'&nbsp;and&nbsp;'Text',</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;instead&nbsp;of&nbsp;web&nbsp;components&nbsp;like&nbsp;'div'&nbsp;and&nbsp;'span'.</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: rgb(221, 70, 76);">Text</span><span style="color: rgb(255, 255, 255);">&gt;</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/</span><span style="color: rgb(221, 70, 76);">View</span><span style="color: rgb(255, 255, 255);">&gt;</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;);</span></div><div><span style="color: rgb(255, 255, 255);">&nbsp;&nbsp;}</span></div><div><span style="color: rgb(255, 255, 255);">}</span></div></div>
+    </pre>
+	</section>
+  <section class="slide">
+		<h2>Sharing code: Can be shared</h2>
+		<ul>
+      <li>Business logic</li>
+      <li>Container components ( Layout )</li>
+      <li>Styles ( Layout )</li>
+    </ul>
+	</section>
+  <section class="slide">
+		<h2>Sharing code: Can't be shared</h2>
+		<ul>
+      <li>Platform spec stuff</li>
+      <li>UI Patterns</li>
+    </ul>
+	</section>
+  <section class="slide">
+		<h2>Sharing code: Depends on</h2>
+		<ul>
+      <li>Plugins</li>
+      <li>Platform</li>
+      <li>Design</li>
+    </ul>
+	</section>
+  <section class="slide">
+		<h2>Ecosystem</h2>
+		<ul>
+      <li>v 0.42 ( monthly )</li>
+      <li>4450 packages in npm ( react-native )</li>
+      <li>26000 packages in npm ( react )</li>
+    </ul>
+	</section>
+	<section class="slide">
+		<h2>React Native Architecture</h2>
+    <hr>
+    <ul>
+      <li>Your code -> Native View</li>
+      <li>react-native vs react DOM</li>
+      <li>Native modules</li>
+    </ul>
+	</section>
+  <section class="slide">
+		<img src="pictures/reactnativeflow.png" alt="" class="cover">
+	</section>
+  <section class="slide">
+    <img src="pictures/reactnativeflow.jpg" alt="" class="cover">
+	</section>
+  <section class="slide">
+		<img src="pictures/reactnativeios.jpg" alt="" class="cover">
+	</section>
+	<section class="slide">
+		<h2>Way to production: Expected</h2>
+    <iframe src="//coub.com/embed/m25f1?muted=true&autostart=true&originalSize=true&startWithHD=false" allowfullscreen="true" frameborder="0" width="360" height="360"></iframe><script async src="//c-cdn.coub.com/embed-runner.js"></script>
+		
+	</section>
+  <section class="slide">
+		<h2>Way to production: Result</h2>
+		<p> Conflicts, 2w review in App Store, certificates, provisioning, developer account ( apple )</p>
+    <video src="pictures/giphy.mp4" autoplay="autoplay" loop="loop">
+	</section>
+
+  <section class="slide">
+		<h2>CodePush</h2>
+		<h3><b>Deploy Code Updates directly to users</b></h3>
+    <hr>
+      <pre>
+        <code>code-push release-react MyAppName ios</code>
+      </pre>
+
+    <ul>
+      <li>JS bundle ( react-native application )</li>
+      <li>Image assets ( resources )</li>
+      <li>Config ( styles, i18n, etc)</li>
+    </ul>
+  </section>
+  <section class="slide">
+		<h2>CodePush</h2>
+		<h3><b>Deploy Code Updates directly to users</b></h3>
+    <p>Features</p>
+    <ul>
+      <li>Continuous Delivery</li>
+      <li>Team support</li>
+      <li>A/B Testing</li>
+      <li>Rollback</li>
+      <li>Environment/Version/Platform specific updates</li>
+    </ul>
+  </section>
+  <section class="slide">
+		<img src="pictures/codepush.png" alt="" class="cover">
+  </section>
+	<section class="slide">
+		<h2>Testing</h2>
+		<ul>
+      <li>mocha</li>
+      <li>chai</li>
+      <li>jest</li>
+      <li>enzyme</li>
+      <li>sinon</li>
+    </ul>
+		<p>Unit, Component, Integrations Tests</p>
+	</section>
+	<section class="slide">
+		<h2 class="shout shrink">Questions</h2>
+	</section>
+	<section class="slide grid">
+		<h2>Contact us</h2>
+    <p>skype: live:bloodinfest</p>
+    <p>skype: glib.kes</p>
+	</section>
+	<section class="slide" id="see-more">
+		<h2 class="shout">
+			Thanks
+		</h2>
+	</section>
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2015 Yours Truly, Famous Inc. -->
+	<!-- Photos by John Carey, fiftyfootshadows.net -->
+</body>
+</html>
